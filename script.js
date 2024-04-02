@@ -120,13 +120,14 @@ next_btn.onclick = () => {
 // Function to display questions and options
 function showQuetions(index) {
     const que_text = document.querySelector(".que_text");
+    const question_count = document.querySelector(".question_count");
 
     if (!questions || index < 0 || index >= questions.length) {
         console.error("Invalid questions array or index");
         return;
     }
 
-    let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
+    let que_tag = '<span>'+ (index + 1) + ". " + questions[index].question +'</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
@@ -142,7 +143,11 @@ function showQuetions(index) {
             optionSelected(this);
         });
     }
+
+    // Update question count
+    question_count.innerText = "Question " + (index + 1) + " of " + questions.length;
 }
+
 
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
