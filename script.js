@@ -192,17 +192,17 @@ function optionSelected(answer) {
     if(userAns == correcAns) { // If user selected option is equal to correct answer
         userScore += 1; // Increase score
         answer.classList.add("correct"); // Add green color to correct selected option
-        answer.insertAdjacentHTML("beforeend", tickIconTag); // Add tick icon
+
         console.log("Correct Answer");
         console.log("Your correct answers = " + userScore);
     } else {
         answer.classList.add("incorrect"); // Add red color to incorrect selected option
-        answer.insertAdjacentHTML("beforeend", crossIconTag); // Add cross icon
+
 
         for(let i = 0; i < allOptions; i++) {
             if(option_list.children[i].textContent == correcAns) { // If there is an option which is matched to the correct answer
                 option_list.children[i].setAttribute("class", "option correct"); // Add green color
-                option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); // Add tick icon
+
                 console.log("Auto selected correct answer.");
             }
         }
@@ -249,7 +249,6 @@ function startTimer(time) {
             for(let i = 0; i < allOptions; i++) {
                 if(option_list.children[i].textContent == correcAns) { // If there is an option which is matched to the correct answer
                     option_list.children[i].setAttribute("class", "option correct"); // Add green color
-                    option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); // Add tick icon
                     console.log("Time Off: Auto selected correct answer.");
                 }
             }
