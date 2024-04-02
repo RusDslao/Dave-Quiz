@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Quiz App | CodingNepal</title>
+    <title>Exam-Reviewer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
@@ -16,23 +16,38 @@
     <div class="info_box">
         <div class="info-title"><span>Choose Subjects</span></div>
         <div class="radio-container">
+
             <label class="custom-radio">
-                <input type="radio" name="subject" value="math">
+                <input type="radio" name="subject" value="ias">
                 <span class="radio-indicator"></span>
-                <span class="radio-label">Math</span>
+                <span class="radio-label">Infomation Assurance & Technologies</span>
             </label>
-            
             <label class="custom-radio">
-                <input type="radio" name="subject" value="science">
+                <input type="radio" name="subject" value="mis">
                 <span class="radio-indicator"></span>
-                <span class="radio-label">Science</span>
+                <span class="radio-label">Management Information Systems</span>
             </label>
-            
             <label class="custom-radio">
-                <input type="radio" name="subject" value="history">
+                <input type="radio" name="subject" value="mst">
                 <span class="radio-indicator"></span>
-                <span class="radio-label">History</span>
+                <span class="radio-label">Mobile System and Technologies</span>
             </label>
+            <label class="custom-radio">
+                <input type="radio" name="subject" value="wst">
+                <span class="radio-indicator"></span>
+                <span class="radio-label">Web System and Technologies</span>
+            </label>
+            <label class="custom-radio">
+                <input type="radio" name="subject" value="pl">
+                <span class="radio-indicator"></span>
+                <span class="radio-label">Programming Languages</span>
+            </label>   
+            <label class="custom-radio">
+                <input type="radio" name="subject" value="gb">
+                <span class="radio-indicator"></span>
+                <span class="radio-label">Great Books</span>
+            </label>
+
         </div>
               
         
@@ -46,7 +61,7 @@
     <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
-            <div class="title">Awesome Quiz Application</div>
+            <div class="title" id="examTitle">Review Exam</div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
                 <div class="timer_sec">15</div>

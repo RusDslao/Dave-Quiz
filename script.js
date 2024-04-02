@@ -8,8 +8,12 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-import mathQuestions from './mathQuestions.js';
-import scienceQuestions from './scienceQuestions.js';
+import MIS from './Subjects/MIS.js';
+import PL from './Subjects/PL.js';
+import WST from './Subjects/WST.js';
+import MST from './Subjects/MST.js';
+import GB from './Subjects/GB.js';
+import IAS from './Subjects/IAS.js';
 
 let questions = []; // Declare an empty array to hold questions
 
@@ -26,11 +30,23 @@ function handleSubjectChange() {
     console.log("Selected subject:", selectedSubject.value);
     
     switch(selectedSubject.value) {
-        case "math":
-            questions = mathQuestions.slice(); // Make a copy of the questions array
+        case "mis":
+            questions = MIS.slice(); // Make a copy of the questions array
             break;
-        case "science":
-            questions = scienceQuestions.slice(); // Make a copy of the questions array
+        case "pl":
+            questions = PL.slice(); // Make a copy of the questions array
+            break;
+        case "wst":
+            questions = WST.slice(); // Make a copy of the questions array
+            break;
+        case "mst":
+            questions = MST.slice(); // Make a copy of the questions array
+            break;
+        case "gb":
+            questions = GB.slice(); // Make a copy of the questions array
+            break;
+        case "ias":
+            questions = IAS.slice(); // Make a copy of the questions array
             break;
         default:
             console.error("Invalid subject selected");
@@ -39,6 +55,24 @@ function handleSubjectChange() {
 
     shuffleQuestions(); // Shuffle the questions array
 }
+const titleElement = document.getElementById('examTitle');
+const radioButtons = document.querySelectorAll('input[name="subject"]');
+
+radioButtons.forEach(button => {
+    button.addEventListener('change', function() {
+        const selectedSubject = document.querySelector('input[name="subject"]:checked').value;
+        const subjectMap = {
+            'mis': 'Management Information Systems',
+            'pl': 'Programming Languages',
+            'wst': 'Web System and Technologies',
+            'mst': 'Mobile System and Technologies',
+            'gb': 'Great Books',
+            'ias': 'Infomation Assurance & Technologies'
+
+        };
+        titleElement.textContent = subjectMap[selectedSubject];
+    });
+});
 
 // Function to shuffle the questions array
 function shuffleQuestions() {
@@ -120,14 +154,13 @@ next_btn.onclick = () => {
 // Function to display questions and options
 function showQuetions(index) {
     const que_text = document.querySelector(".que_text");
-    const question_count = document.querySelector(".question_count");
 
     if (!questions || index < 0 || index >= questions.length) {
         console.error("Invalid questions array or index");
         return;
     }
 
-    let que_tag = '<span>'+ (index + 1) + ". " + questions[index].question +'</span>';
+    let que_tag = '<span>' + questions[index].question +'</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
@@ -143,11 +176,7 @@ function showQuetions(index) {
             optionSelected(this);
         });
     }
-
-    // Update question count
-    question_count.innerText = "Question " + (index + 1) + " of " + questions.length;
 }
-
 
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';

@@ -1,5 +1,5 @@
 // Define Science questions
-const scienceQuestions = [
+const PL = [
   {
     question: "What is the chemical symbol for water?",
     options: ["H2O", "CO2", "O2", "NaCl"],
@@ -11,4 +11,4 @@ const scienceQuestions = [
     answer: "Nitrogen"
   }
 ];
-export default scienceQuestions;
+export default PL;
