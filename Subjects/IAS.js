@@ -61,7 +61,7 @@ const IAS = [
   },
   {
     question: " A successful security audit accomplishes the following except one",
-    options: ["It compares the security policy with the actual practice in place.", 
+    options: ["It compares the security policy with the actual practice in place", 
   "It determines the exposure to threats from the inside", 
   "Finalizes the policy without further study and does not have gather enough information", 
   "It also determines the exposure of an organization from an outside attack."],
