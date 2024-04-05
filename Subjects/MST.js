@@ -7,60 +7,60 @@ const MST = [
     },
     {
       question: "This are the step to implement an activity except one",
-      options: ["Implement a basic UI for the Activity in an associated XML layout file.", 
-		"Call the methods to other class.", 
-		"Create an Activity Java class.", 
-		"Declare the new Activity in AndroidManifest.xml."],
+      options: ["Implement a basic UI for the Activity in an associated XML layout file", 
+		"Call the methods to other class", 
+		"Create an Activity Java class", 
+		"Declare the new Activity in AndroidManifest.xml"],
       answer: "Call the methods to other class"
     },
     {
       question: "Presented to the user when the app is launched, it can then start other activities to perform different actions",
-      options: ["intent extras", "traget activity", "main activity.", "external activity"],
+      options: ["intent extras", "traget activity", "main activity", "external activity"],
       answer: "main activity"
     },
     {
       question: "It is the set of states an activity can be in during its entire lifetime",
-      options: ["activity life cycle", "traget activity", "main activity.", "external activity"],
+      options: ["activity life cycle", "traget activity", "main activity", "external activity"],
       answer: "activity life cycle"
     },
     {
       question: "It is invoked when the app is launched for the first time.",
-      options: ["onStart", "onResume", "onRestart.", "onCreate"],
+      options: ["onStart", "onResume", "onRestart", "onCreate"],
       answer: "onCreate"
     },
     {
       question: "It is invoked before the activity becomes visible to the user.",
-      options: ["onStart", "onResume", "onRestart.", "onCreate"],
+      options: ["onStart", "onResume", "onRestart", "onCreate"],
       answer: "onStart"
     },
     {
       question: "It is invoked before the activity starts interacting with the user.",
-      options: ["onResume", "onDestroy", "onRestart.", "onPause"],
+      options: ["onResume", "onDestroy", "onRestart", "onPause"],
       answer: "onResume"
     },
     {
       question: "It is invoked when the system is about to start resuming another activity",
-      options: ["onResume", "onDestroy", "onStop.", "onPause"],
+      options: ["onResume", "onDestroy", "onStop", "onPause"],
       answer: "onPause"
     },
     {
       question: "It is invoked when the activity is no longer visible to the user.",
-      options: ["onResume", "onDestroy", "onStop.", "onPause"],
+      options: ["onResume", "onDestroy", "onStop", "onPause"],
       answer: "onStop"
     },
     {
       question: "The activity is finishing (due to the user completely dismissing the activity or due to finish() being called on the activity)",
-      options: ["onRestart", "onDestroy", "onStop.", "onPause"],
+      options: ["onRestart", "onDestroy", "onStop", "onPause"],
       answer: "onDestroy"
     },
     {
       question: "the system is temporarily destroying the activity due to a configuration change (such as device rotation or multi-window mode)",
-      options: ["onRestart", "onDestroy", "onStop.", "onPause"],
+      options: ["onRestart", "onDestroy", "onStop", "onPause"],
       answer: "onDestroy"
     },
     {
       question: "It is invoked if the activity comes back after being stopped, it is always followed by onStart().",
-      options: ["onRestart", "onDestroy", "onStop.", "onPause"],
+      options: ["onRestart", "onDestroy", "onStop", "onPause"],
       answer: "onRestart"
     },
     {
@@ -105,11 +105,11 @@ const MST = [
     },
     {
       question: "This are the step to add an intent after cerating a new activity except one",
-      options: ["Define the method that will be used to start another activity.", 
-		"Declare the new Activity in AndroidManifest.xml.", 
+      options: ["Define the method that will be used to start another activity", 
+		"Declare the new Activity in AndroidManifest.xml", 
 		"Add the android:onClick attribute to the Button element that will be used to start another activity", 
-		"Invoked before the activity starts interacting with the user."],
-      answer: "Invoked before the activity starts interacting with the user."
+		"Invoked before the activity starts interacting with the user"],
+      answer: "Invoked before the activity starts interacting with the user"
     },
     {
       question: "Attribute indicates that the main activity is the parent of the second activity. ",
@@ -133,7 +133,7 @@ const MST = [
     },
     {
       question: "One of the ways to cerate layout that the presentation of the app can be separated from the code that controls its behavior",
-      options: ["Instantiate layout elements at runtime.", 
+      options: ["Instantiate layout elements at runtime", 
 		"Draws something the user can see and interact with", 
 		"Defines the layout structure for View and other ViewGroup objects", 
 		"Declare UI elements in XML"],
@@ -141,11 +141,11 @@ const MST = [
     },
     {
       question: "One of the ways to cerate layout that the View and ViewGroup objects can be created and their properties can be manipulated programmatically.",
-      options: ["Instantiate layout elements at runtime.", 
+      options: ["Instantiate layout elements at runtime", 
 		"Draws something the user can see and interact with", 
 		"Defines the layout structure for View and other ViewGroup objects", 
 		"Declare UI elements in XML"],
-      answer: "Instantiate layout elements at runtime."
+      answer: "Instantiate layout elements at runtime"
     },
     {
       question: "Is an interface to global information about an application environment. To get the context",
@@ -242,17 +242,17 @@ const MST = [
     },
     {
       question: "One of the two step to create view or widgets",
-      options: ["Add visual structure and interactive elements that are familiar to users.", 
+      options: ["Add visual structure and interactive elements that are familiar to users", 
 		"Define a view/widget in the layout file and assign it a unique ID", 
-		"Present user actions and other options in the app's activities.", 
+		"Present user actions and other options in the app's activities", 
 		"Add more details and take actions with the notification."],
       answer: "Define a view/widget in the layout file and assign it a unique ID"
     },
     {
       question: "One of the two step to create view or widgets",
-      options: ["Add visual structure and interactive elements that are familiar to users.", 
-		"Add more details and take actions with the notification.", 
-		"Present user actions and other options in the app's activities.", 
+      options: ["Add visual structure and interactive elements that are familiar to users", 
+		"Add more details and take actions with the notification", 
+		"Present user actions and other options in the app's activities", 
 		" Create an instance of the view object and capture it from the layout (typically in the onCreate() method)"],
       answer: " Create an instance of the view object and capture it from the layout (typically in the onCreate() method)"
     },
