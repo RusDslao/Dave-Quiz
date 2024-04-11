@@ -263,7 +263,7 @@ const MIS = [
     question: "What is one of the primary goals of office automation?",
     options: [
       "To increase manual paperwork within departments",
-      "To integrate basic office requirements for efficient operation ",
+      "To integrate basic office requirements for efficient operation",
       "To encourage separate handling of office functions",
       "To require additional workforce and resources for office tasks"
     ],
@@ -274,7 +274,7 @@ const MIS = [
     options: [
       "To hinder workflow and communication among office workers",
       "To decrease efficiency in managing office activities",
-      "To improve workflow and communication of office workers ",
+      "To improve workflow and communication of office workers",
       "To limit the use of software, hardware, and networking in office environments"
     ],
     answer: "To improve workflow and communication of office workers"
@@ -414,7 +414,7 @@ const MIS = [
     options: [
       "A system that enables slow and costly communication channels.",
       "An information system that facilitates communication using telegraphy only.",
-      "A type of system that provides fast and inexpensive communication channels using available resources such as telephony, computing hardware, networks, and the Internet. ",
+      "A type of system that provides fast and inexpensive communication channels using available resources such as telephony, computing hardware, networks, and the Internet.",
       "A system that restricts communication to handwritten letters only."
     ],
     answer: "A type of system that provides fast and inexpensive communication channels using available resources such as telephony, computing hardware, networks, and the Internet."
