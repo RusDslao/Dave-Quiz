@@ -90,11 +90,11 @@ continue_btn.onclick = () => {
     handleSubjectChange(); // Call handleSubjectChange function to get questions
     showQuetions(0); // Call showQuestions function to display first question
     queCounter(1); // Set question counter
-    startTimer(15); // Start timer
+    startTimer(30); // Start timer
     startTimerLine(0); // Start timer line
 }
 
-let timeValue =  15;
+let timeValue =  30;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -106,7 +106,7 @@ let widthValue = 0;
 result_box.querySelector(".buttons .restart").onclick = () => {
     quiz_box.classList.add("activeQuiz"); // Show quiz box
     result_box.classList.remove("activeResult"); // Hide result box
-    timeValue = 15; 
+    timeValue = 30; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
