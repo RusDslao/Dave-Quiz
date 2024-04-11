@@ -337,7 +337,7 @@ const MIS = [
       "Desktop Publishing ",
       "Graphics Design"
     ],
-    answer: "Database Management "
+    answer: "Database Management"
   },
   {
     question: "Software lays out text, graphics, and pictures on a page, enabling tasks like integrating text and graphics, adjusting sizes, and using various type styles. As word processing software advances, the line between the two is blurring.",
