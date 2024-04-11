@@ -118,7 +118,7 @@ const WST = [
       "JavaScript enhances website interactivity and complexity by implementing features like content updates and user interactions.",
       "JavaScript ensures proper file organization and directory structure for web development."
     ],
-    answer: "JavaScript enhances website interactivity and complexity by implementing features like content updates and user interactions"
+    answer: "JavaScript enhances website interactivity and complexity by implementing features like content updates and user interactions."
   },
   {
     question: "How is internal or embedded JavaScript included in an HTML document?",
