@@ -57,7 +57,7 @@ const MIS = [
       "Virtual Desktops and Application",
       "Mobile, Web, and Cloud Applications"
     ],
-    answer: "Virtual Desktops and Applications"
+    answer: "Virtual Desktops and Application"
   },
   {
     question: "Which of the following best defines End-User Development (EUD)?",
