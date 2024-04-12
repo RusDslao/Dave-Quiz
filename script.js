@@ -275,7 +275,7 @@ function startTimerLine(time) {
 
     // Set interval and cut-off time based on device type
     if (deviceType === 'mobile') {
-        interval = 97; // For mobile
+        interval = 96; // For mobile
     } else {
         interval = 57; // For desktop
     }
