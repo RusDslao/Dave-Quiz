@@ -691,16 +691,6 @@ const PL = [
     answer: "Lifetime"
   },
   {
-    question: "A variable is the time during which the variable is bound to a specific memory location",
-    options: [
-      "Dynamic type binding",
-      "Allocation",
-      "Deallocation",
-      "Lifetime"
-    ],
-    answer: "Lifetime"
-  },
-  {
     question: "Which category of variables is bound to memory cells before program execution begins and remains bound to those same memory cells until program execution terminates?",
     options: [
       "Stack-dynamic variables",
