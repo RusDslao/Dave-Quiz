@@ -262,15 +262,39 @@ function startTimer(time) {
 
 // Function to start timer line
 function startTimerLine(time) {
-    counterLine = setInterval(timer, 29);
+    let interval;
+    
+    // Function to detect device type
+    function detectDeviceType() {
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        return isMobile ? 'mobile' : 'desktop';
+    }
+
+    const deviceType = detectDeviceType();
+    console.log('Device Type:', deviceType);
+
+    // Set interval and cut-off time based on device type
+    if (deviceType === 'mobile') {
+        interval = 97; // For mobile
+    } else {
+        interval = 57; // For desktop
+    }
+
+    counterLine = setInterval(timer, interval);
+    
     function timer() {
         time += 1; // Increment time
         time_line.style.width = time + "px"; // Change width of time line
-        if(time > 549) { // If time value is greater than 549
+        if (deviceType === 'desktop' && time > 549) { // If desktop and time > 549
+            clearInterval(counterLine); // Clear counterLine
+        } else if (deviceType === 'mobile' && time > 320) { // If mobile and time > 320
             clearInterval(counterLine); // Clear counterLine
         }
     }
 }
+
+
+
 
 // Function to set question counter
 function queCounter(index) {
