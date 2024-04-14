@@ -192,7 +192,7 @@ const WST = [
     answer: "JavaScript Object"
   },
   {
-    question: "It is an individual line of code that is enclosed within the <script> tags",
+    question: "It is an individual line of code that is enclosed within the script tags",
     options: [
       "JavaScript Statement",
       "JavaScript Object",
