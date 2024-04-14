@@ -150,6 +150,10 @@ next_btn.onclick = () => {
     }
 }
 
+document.body.addEventListener('keydown', function(event) {
+    next_btn.click(); // Simulate click on the next button
+});
+
 
 // Function to display questions and options
 function showQuetions(index) {
