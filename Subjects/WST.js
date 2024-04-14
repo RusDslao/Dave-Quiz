@@ -450,6 +450,46 @@ const WST = [
       "do while"
     ],
     answer: "for loop"
-  }
+  },
+  {
+  question: "These  operators allow assigning of values to variables and constants. It commonly uses the equal sign (=). ",
+  options: [
+    "Assignment",
+    "Arithmetic",
+    "Logical",
+    "Comparison"
+  ],
+  answer: "Assigment"
+},
+{
+  question: "These  operators express mathematical operations and accept numerical values and variables. ",
+  options: [
+    "Assignment",
+    "Arithmetic",
+    "Logical",
+    "Comparison"
+  ],
+  answer: "Arithmetic"
+},
+{
+  question: "These operators work with Boolean-type values such as true or false. ",
+  options: [
+    "Assignment",
+    "Arithmetic",
+    "Logical",
+    "Comparison"
+  ],
+  answer: "Logical"
+},
+{
+  question: "These operators compare two (2) variables or operands. It includes not equal or equal to the value of the variable or operand (!=, ==), equal value and equal type (===), less than and greater than (<, >), and less than or equal to and greater than or equal to (<=, >=).",
+  options: [
+    "Assignment",
+    "Arithmetic",
+    "Logical",
+    "Comparison"
+  ],
+  answer: "Comparison"
+}
   ];
   export default WST;
