@@ -101,7 +101,7 @@ const WST = [
     answer: "Responsive Image"
   },
   {
-    question: "A flexible one that can be viewed on small devices up to larger screens.",
+    question: "A video player that can be viewed on small devices up to larger screens.",
     options: [
       "Responsive Image",
       "Responsive Video",
