@@ -101,7 +101,7 @@ const WST = [
     answer: "Responsive Image"
   },
   {
-    question: "A flexible one that can be viewed on small devices up to larger screens.",
+    question: "A video player that can be viewed on small devices up to larger screens.",
     options: [
       "Responsive Image",
       "Responsive Video",
@@ -192,7 +192,7 @@ const WST = [
     answer: "JavaScript Object"
   },
   {
-    question: "It is an individual line of code that is enclosed within the <script> tags",
+    question: "It is an individual line of code that is enclosed within the script tags",
     options: [
       "JavaScript Statement",
       "JavaScript Object",
