@@ -459,7 +459,7 @@ const WST = [
     "Logical",
     "Comparison"
   ],
-  answer: "Assigment"
+  answer: "Assignment"
 },
 {
   question: "These  operators express mathematical operations and accept numerical values and variables. ",
