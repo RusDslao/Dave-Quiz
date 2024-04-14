@@ -19,8 +19,8 @@ body {
     .info_box,
     .quiz_box,
     .result_box {
-        width: 90%; /* Take up 90% of the screen width */
-        max-width: 90%; /* Limit to 90% of the screen width */
+        width: 70%; /* Take up 90% of the screen width */
+        max-width: 100%; /* Limit to 90% of the screen width */
     }
 
     /* Add padding to sections */
