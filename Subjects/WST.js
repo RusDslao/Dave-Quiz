@@ -123,22 +123,23 @@ const WST = [
   {
     question: "How is internal or embedded JavaScript included in an HTML document?",
     options: [
-      "By linking an external JavaScript file using the <script> tag within the <head> section.",
-      "By embedding JavaScript code directly within <script> tags inside the <head> or <body> section.",
-      "By importing JavaScript functions from other webpages using the <link> tag.",
-      "By including JavaScript code inline with HTML elements using the <javascript> tag."
+
+      "Linking external JavaScript file in <script> tag in <head>.",
+      "Embedding JavaScript code in <script> tags in <head> or <body>.",
+      "Importing JavaScript functions with <link> tag.",
+      "Including JavaScript inline with <script> tag."
     ],
-    answer: "By embedding JavaScript code directly within <script> tags inside the <head> or <body> section."
+    answer: "Embedding JavaScript code in <script> tags in <head> or <body>."
   },
   {
     question: "How is external JavaScript linked to an HTML document?",
     options: [
-      "By embedding JavaScript code directly within <script> tags inside the <head> or <body> section.",
-      "By importing JavaScript functions from other webpages using the <link> tag.",
-      "By linking a separate .js file using the <script> tag with the src attribute within the <head> section.",
-      "By including JavaScript code inline with HTML elements using the <javascript> tag."
+      "Linking external JavaScript file in <script> tag in <head>.",
+      "Embedding JavaScript code in <script> tags in <head> or <body>.",
+      "Importing JavaScript functions with <link> tag.",
+      "Including JavaScript inline with <script> tag."
     ],
-    answer: "By linking a separate .js file using the <script> tag with the src attribute within the <head> section."
+    answer: "Linking external JavaScript file in <script> tag in <head>."
   },
   {
     question: "How can you create a line comment in JavaScript?",
