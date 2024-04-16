@@ -221,6 +221,299 @@ const IAS = [
     question: "Polyalphabetic Ciphers algorithm reffered to as the _______?",
     options: ["Venise Cipher", "Vigenere Cipher", "Vigenre Cipher", "Willie Revillame"],
     answer: "Vigenere Cipher"
+  },
+   {
+    question: "Refers to any group of users, workstations, devices, printers, computers, and database servers that share different types of data via network resources.",
+    options: ["Domain", "Browser", "Server", "Application"],
+    answer: "Domain"
+  },
+ {
+    question: "This covers all the users that have access to the other domains.",
+    options: ["LAN Domain", "Workstation Domain", "WAN Domain", "User Domain"],
+    answer: "User Domain"
+  },
+ {
+    question: "It is a computer of an individual user where the production takes place.",
+    options: ["LAN Domain", "Workstation Domain", "WAN Domain", "User Domain"],
+    answer: "Workstation Domain"
+  },
+ {
+    question: "This contains all of the workstation, hubs, switches, and routers. This isalso a trusted zone.",
+    options: ["LAN Domain", "Workstation Domain", "WAN Domain", "LAN/WAN Domain"],
+    answer: "LAN Domain"
+  },
+ {
+    question: "It consists of the Internet and semi-private lines.",
+    options: ["LAN Domain", "WAN Domain", "Remote Access Domain", "LAN/WAN Domain"],
+    answer: "WAN Domain"
+  },
+ {
+    question: "It is the boundary between the trusted and untrusted zones. The zones are filtered with a firewall.",
+    options: ["LAN Domain", "WAN Domain", "Remote Access Domain", "LAN/WAN Domain"],
+    answer: "LAN/WAN Domain"
+  },
+ {
+    question: "This domain is made up of user-accessed servers such as e-mail and database",
+    options: ["LAN Domain", "System/Application Domain", "Remote Access Domain", "LAN/WAN Domain"],
+    answer: "System/Application Domain"
+  },
+ {
+    question: "This is the domain in which a mobile user can access the local network usually through a VPN",
+    options: ["LAN Domain", "System/Application Domain", "Remote Access Domain", "LAN/WAN Domain"],
+    answer: "Remote Access Domain"
+  },
+ {
+    question: "Following are the risks in User Domain except one",
+    options: ["User can use the password to delete his/her file", 
+	      "A fire can destroy primary data", 
+	      "User can destroy data in the application (intentionally or not) and delete all", 
+	      "User can insert infected CD or flash drive into the computer"],
+    answer: "A fire can destroy primary data"
+  },
+ {
+    question: "Following are the risks in Workstation Domain except one",
+    options: ["A workstation’s hard drive can fail to cause loss of data.", 
+	      "The workstation’s operating system can have a known software vulnerability that allows a hacker to connect remotely and steal data.", 
+	      "User can destroy data in the application (intentionally or not) and delete all", 
+	      "A workstation’s browser can have a software vulnerability,which allows unsigned scripts to install malicious software silently."],
+    answer: "User can destroy data in the application (intentionally or not) and delete all"
+  },
+ {
+    question: "Following are the risks in LAN Domain except one",
+    options: ["A work can spread through the LAN and infect all computers in it.", 
+	      "LAN server OS can have a known software vulnerability.", 
+	      "An unauthorized user can access the organization’s workstations in a LAN.", 
+	      "A firewall with unnecessary ports open can allow access from the Internet."],
+    answer: "A firewall with unnecessary ports open can allow access from the Internet."
+  },
+ {
+    question: "Following are the risks in WAN Domain except one",
+    options: ["Server can receive a Denial of Service (DOS) or Distributed Denial of Service (DDOS) attack.", 
+	      "A file transfer protocol (FTP) can allow anonymously uploaded illegal software", 
+	      "An unauthorized user can access the organization’s workstations in a WAN.", 
+	      "The service provider can have a major network outage."],
+    answer: "An unauthorized user can access the organization’s workstations in a WAN."
+  },
+ {
+    question: "Following are the risks in LAN/WAN Domain except one",
+    options: ["Remote communication from the office can be unsecured.", 
+	      "A firewall with unnecessary ports open can allow access from the Internet", 
+	      "A hacker can penetrate an IT infrastructure and gain access to the internal network."],
+    answer: "Remote communication from the office can be unsecured."
+  },
+ {
+    question: "Following are the risks in Remote Access Domain except one",
+    options: ["Remote communication from the office can be unsecured.", 
+	      "A firewall with unnecessary ports open can allow access from the Internet", 
+	      "Communication circuit outage can deny connection."],
+    answer: "A firewall with unnecessary ports open can allow access from the Internet"
+  },
+ {
+    question: "Following are the risks in System/Application Domain except one",
+    options: ["The service provider can have a major network outage.", 
+	      "A DOS attack can cripple the organization’s e-mail.", 
+	      "A fire can destroy primary data", 
+	      "A database server can be attacked by SQL injection, corrupting the data."],
+    answer: "The service provider can have a major network outage."
+  },
+ {
+    question: "Those whose username and encrypted password are stored in the computer itself.",
+    options: ["Domain Users", 
+	      "Drug Users", 
+	      "Local Users", 
+	      "Remote Users"],
+    answer: "Local Users"
+  },
+ {
+    question: "Those whose username and password are stored on a domain controller rather than the computer and the user is logging into.",
+    options: ["Domain Users", 
+	      "Drug Users", 
+	      "Local Users", 
+	      "Remote Users"],
+    answer: "Domain Users"
+  },
+ {
+    question: "This domain is defined as a sub-network that is made up of servers and clients—each of which is controlled by a centralized database. ",
+    options: ["MAN Domain", 
+	      "LAN Domain", 
+	      "WAN Domain", 
+	      "Remote Domain"],
+    answer: "LAN Domain"
+  },
+ {
+    question: "A communications network that spans a large geographic area such as cities, states, or countries. It can be private to connect parts of a business, or it can be more public to connect smaller networks.",
+    options: ["MAN Domain", 
+	      "LAN Domain", 
+	      "WAN Domain", 
+	      "Remote Domain"],
+    answer: "WAN Domain"
+  },
+ {
+    question: "Enables remote users to access files and other system resources on any devices or servers that are connected to the network at any time, increasing employee productivity and enabling them to better collaborate with colleagues around the world.",
+    options: ["MAN Domain", 
+	      "LAN Domain", 
+	      "WAN Domain", 
+	      "Remote Access Domain"],
+    answer: "Remote Access Domain"
+  },
+ {
+    question: "What is IP security VPN (IPsec VPN)?",
+    oprions: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
+	      "Common encryption technology that is widely used to provide secure communication on the Internet.",
+	      "A relatively new player to the remote access arena that was not developed by a firewall manufacturer, but rather by Microsoft."
+	     ],
+    answer: "A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key"
+  },
+ {
+    question: "What is Secure Socket Layer VPN (SSL VPN)?",
+    oprions: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
+	      "A relatively new player to the remote access arena that was not developed by a firewall manufacturer, but rather by Microsoft.",
+	      "Common encryption technology that is widely used to provide secure communication on the Internet."
+	      ],
+    answer: "Common encryption technology that is widely used to provide secure communication on the Internet."
+  },
+ {
+    question: "What is Microsoft Direct Access?",
+    oprions: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
+	      "A relatively new player to the remote access arena that was not developed by a firewall manufacturer, but rather by Microsoft.",
+	      "Common encryption technology that is widely used to provide secure communication on the Internet."
+	      ],
+    answer: "A relatively new player to the remote access arena that was not developed by a firewall manufacturer, but rather by Microsoft."
+  },
+ {
+    question: "This consists of all of a business’ mission-critical systems, applications, and data. It is important to ensure that this domain is secure at all times.",
+    options: ["MAN Domain", 
+	      "LAN Domain", 
+	      "System/Application Domain", 
+	      "Remote Access Domain"
+	     ],
+    answer: "System/Application Domain"
+  },
+ {
+    question: "This can be defined as (gaining access to a physical entity or area without permission from an administrative figure).",
+    options: ["Unauthorized Logical Access", 
+	      "Unauthorized Physical Access", 
+	      "Server Vulnerabilities", 
+	      "Software Vulnerabilities"
+	     ],
+    answer: "Unauthorized Physical Access"
+  },
+ {
+    question: "This is nearly identical to unauthorized physical access, except it is not limited to tangible data.",
+    options: ["Unauthorized Logical Access", 
+	      "Unauthorized Physical Access", 
+	      "Server Vulnerabilities", 
+	      "Software Vulnerabilities"
+	     ],
+    answer: "Unauthorized Logical Access"
+  },
+ {
+    question: "This is a flaw that exists in the programming of a software component or system that allows a malicious attacker to gain unauthorized access to that system through an exploit.",
+    options: ["Unauthorized Logical Access", 
+	      "Unauthorized Physical Access", 
+	      "Server Vulnerabilities", 
+	      "Software Vulnerabilities"
+	     ],
+    answer: "Software Vulnerabilities"
+  },
+ {
+    question: "Non-server systems with the exception that software vulnerabilities that can exist on servers have the potential to be even more damaging.",
+    options: ["Software Vulnerabilities",
+	      "Unauthorized Logical Access", 
+	      "Unauthorized Physical Access", 
+	      "Server Vulnerabilities"
+	     ],
+    answer: "Server Vulnerabilities"
+  },
+ {
+    question: "Occurs when any stored data is destroyed.",
+    options: ["Cyber Attack",
+	      "Unauthorized Logical Access", 
+	      "Data Loss", 
+	      "Server Vulnerabilities"
+	     ],
+    answer: "Data Loss"
+  },
+ {
+    question: "Refers to the code of responsible behavior on the Internet. The basic rule is (Do not do something in cyberspace that you would consider wrong or illegal in everyday life).",
+    options: ["Cyber Attack",
+	      "Cyber Ethics", 
+	      "Data Loss", 
+	      "Cybersecurity"
+	     ],
+    answer: "Cyber Ethics"
+  },
+ {
+    question: "Offers a framework for what he calls a global “ethics in technology” manifesto",
+    options: ["Cybersecurity Manifesto",
+	      "Ethical Manifesto", 
+	      "Ethics Manifesto", 
+	      "Theoritical Manifesto"
+	     ],
+    answer: "Ethics Manifesto"
+  },
+ {
+    question: "Author of Ethics Manifesto",
+    options: ["Kawhi Leonard",
+	      "Gerd Leonhard", 
+	      "Gerald Leonhard", 
+	      "Vic Sotto"
+	     ],
+    answer: "Gerd Leonhard"
+  },
+ {
+    question: "We can be employed, use public services, buy things, and function in society without a requirement to deploy the technology on or inside our bodies.",
+    options: ["The right to disconnect",
+	      "The right to remain natural", 
+	      "The right to be anonymous", 
+	      "The right to employ or involve people instead of machines"
+	     ],
+    answer: "The right to remain natural"
+  },
+ {
+    question: "We must be able to choose to be slower than technology and not make efficiency more important than humanity.",
+    options: ["The right to disconnect",
+	      "The right to remain natural", 
+	      "The right to be inefficient if and where it defines our basic humanities", 
+	      "The right to employ or involve people instead of machines"
+	     ],
+    answer: "The right to be inefficient if and where it defines our basic humanities"
+  },
+ {
+    question: "We must retain the right to switch off connectivity, go dark on the network,and pause communication, tracking, and monitoring.",
+    options: ["The right to disconnect",
+	      "The right to remain natural", 
+	      "The right to be inefficient if and where it defines our basic humanities", 
+	      "The right to employ or involve people instead of machines"
+	     ],
+    answer: "The right to disconnect"
+  },
+ {
+    question: "We must retain the option of not being identified and tracked, such as when using a digital application or platform when it doesn’t pose a risk or impose itself on others.",
+    options: ["The right to disconnect",
+	      "The right to remain natural", 
+	      "The right to be anonymous", 
+	      "The right to employ or involve people instead of machines"
+	     ],
+    answer: "The right to be anonymous"
+  },
+ {
+    question: "We should not allow companies or employers to be disadvantaged if they choose to use people instead of machines even if it’s more expensive and less efficient.",
+    options: ["The right to disconnect",
+	      "The right to remain natural", 
+	      "The right to be anonymous", 
+	      "The right to employ or involve people instead of machines"
+	     ],
+    answer: "The right to employ or involve people instead of machines"
+  },
+ {
+    question: "Following are three core ethic values except one",
+    options: ["Objectivity",
+	      "Good Boy", 
+	      "Integrity", 
+	      "Professional Competence and Due Care"
+	     ],
+    answer: "Good Boy"
   }
 ];
 export default IAS;
