@@ -358,7 +358,7 @@ const IAS = [
   },
  {
     question: "What is IP security VPN (IPsec VPN)?",
-    oprions: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
+    options: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
 	      "Common encryption technology that is widely used to provide secure communication on the Internet.",
 	      "A relatively new player to the remote access arena that was not developed by a firewall manufacturer, but rather by Microsoft."
 	     ],
@@ -366,7 +366,7 @@ const IAS = [
   },
  {
     question: "What is Secure Socket Layer VPN (SSL VPN)?",
-    oprions: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
+    options: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
 	      "A relatively new player to the remote access arena that was not developed by a firewall manufacturer, but rather by Microsoft.",
 	      "Common encryption technology that is widely used to provide secure communication on the Internet."
 	      ],
@@ -374,7 +374,7 @@ const IAS = [
   },
  {
     question: "What is Microsoft Direct Access?",
-    oprions: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
+    options: ["A piece of software called “VPN client” is installed in the end user’s computer and is configured with details about the target network, such as the gateway IP address and a preshared security key",
 	      "A relatively new player to the remote access arena that was not developed by a firewall manufacturer, but rather by Microsoft.",
 	      "Common encryption technology that is widely used to provide secure communication on the Internet."
 	      ],
