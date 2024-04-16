@@ -184,7 +184,7 @@ const IAS = [
   },
   {
     question: "It is a type of substitution cipher in which each letter in the plaintext is shifted to a certain number of places down the alphabet.",
-    options: ["Giovanni's Method", "Transposition Techniques", "Ceasar Cipher", "Keyword Ciphers"],
+    options: ["Giovanni's Method", "Transposition Techniques", "Caesar Cipher", "Keyword Ciphers"],
     answer: "Caesar Cipher"
   },
   {
@@ -210,12 +210,17 @@ const IAS = [
   {
     question: "Caesar Cipher is named after (inventor) who used to communicate with his generals",
     options: ["Jake Caesar", "John Caesar", "Julius Caesar", "Justin Caesar"],
-    answer: "Juluis Caesar"
+    answer: "Julius Caesar"
   },
   {
     question: "He suggested that one can also pick a keyletter and begin the keyword UNDER that letter of the plaintext.",
     options: ["Giovanni Battista Argenti", "Giovanni Battista Argentina", "Giovanni Bautista Argenti", "Giovanni Bautista Argentina Sardines"],
     answer: "Giovanni Battista Argenti"
   },
+  {
+    question: "Polyalphabetic Ciphers algorithm reffered to as the _______?",
+    options: ["Venise Cipher", "Vigenere Cipher", "Vigenre Cipher", "Willie Revillame"],
+    answer: "Vigenere Cipher"
+  }
 ];
 export default IAS;
