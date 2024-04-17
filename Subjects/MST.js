@@ -122,13 +122,13 @@ const MST = [
       answer: "layout"
     },
     {
-      question: "Elements in the layout tha draws something the user can see and interact with",
+      question: "Elements in the layout that draws something the user can see and interact with",
       options: ["Layout", "Viewgroup", "View", "Context"],
-      answer: "view"
+      answer: "View"
     },
     {
-      question: "Elements in the layout tha is an invisible container that defines the layout structure for View and other ViewGroup objects",
-      options: ["Layout", "Viewgroup", "View", "Context"],
+      question: "Elements in the layout that is an invisible container that defines the layout structure for View and other ViewGroup objects",
+      options: ["Layout", "ViewGroup", "View", "Context"],
       answer: "ViewGroup"
     },
     {
@@ -160,7 +160,7 @@ const MST = [
     {
       question: "Sets the view to be as big as its parent view group will allow.",
       options: ["wrap-content", "parent-width", "match-parent", "parent-height"],
-      answer: "match-content"
+      answer: "match-parent"
     },
     {
       question: "Creates large and complex layouts with a flat view hierarchy (no nested view groups).",
