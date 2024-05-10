@@ -258,7 +258,7 @@ const MIS = [
       "None"
     ],
     answer: "Labor Negotiation Systems"
-  }
+  } //almost in the handout of prefinals
 ];
 
 
