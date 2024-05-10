@@ -170,7 +170,7 @@ const MIS = [
     answer: "Facility Design System"
   },
   {
-    question: "It is a type of information system that supports HR managers in handling aspects of the acquisition, allocation, and maintenance of an organization’s workforce.",
+    question: "It is a type of information system that supports HR managers in handling aspects of the acquisition, allocation, and maintenance of an organizations workforce.",
     options: [
       "Tactical Human Resource Information System",
       "Tactics Human Resource Information System",
@@ -230,7 +230,7 @@ const MIS = [
     answer: "Succession Planning Systems"
   },
   {
-    question: "It is a type of information system that manages the organization’s workforce as a whole.",
+    question: "It is a type of information system that manages the organizations workforce as a whole.",
     options: [
       "Tactical Human Resource Information System",
       "Tactics Human Resource Information System",
