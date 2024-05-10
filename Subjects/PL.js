@@ -340,6 +340,5 @@ const PL = [
     ],
     answer: "name type equivalence and structure type equivalence"
   }// 05 Handout 1 2 left handouts
-  
 ];
 export default PL;
