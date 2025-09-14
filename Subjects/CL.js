@@ -34,4 +34,4 @@ const Collections = [
   },
 ];
 
-export default Collections;
+export default CL;

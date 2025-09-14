@@ -8,9 +8,9 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-import Collect from "./Subjects/Collections.js";
-import IterationStatements from "./Subjects/IterationStatements.js";
-import SelectionStatements from "./Subjects/SelectionStatements.js";
+import CL from "./Subjects/CL.js";
+import IS from "./Subjects/IS.js";
+import SS from "./Subjects/SS.js";
 
 let questions = []; // Declare an empty array to hold questions
 
@@ -29,14 +29,14 @@ function handleSubjectChange() {
   console.log("Selected subject:", selectedSubject.value);
 
   switch (selectedSubject.value) {
-    case "col":
-      questions = Collect.slice(); // Make a copy of the questions array
+    case "cl":
+      questions = CL.slice(); // Make a copy of the questions array
       break;
-    case "IS":
-      questions = IterationStatements.slice(); // Make a copy of the questions array
+    case "is":
+      questions = IS.slice(); // Make a copy of the questions array
       break;
-    case "SS":
-      questions = SelectionStatements.slice(); // Make a copy of the questions array
+    case "ss":
+      questions = SS.slice(); // Make a copy of the questions array
       break;
     default:
       console.error("Invalid subject selected");
@@ -54,12 +54,9 @@ radioButtons.forEach((button) => {
       'input[name="subject"]:checked'
     ).value;
     const subjectMap = {
-      mis: "Management Information Systems",
-      pl: "Programming Languages",
-      wst: "Web System and Technologies",
-      mst: "Mobile System and Technologies",
-      gb: "Great Books",
-      ias: "Infomation Assurance & Technologies",
+      cl: "Collections",
+      is: "Iteration Statements",
+      ss: "Selections Statements",
     };
     titleElement.textContent = subjectMap[selectedSubject];
   });
