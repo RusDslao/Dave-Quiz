@@ -198,8 +198,9 @@ let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 function optionSelected(answer) {
   clearInterval(counter); // Clear timer
   clearInterval(counterLine); // Clear timer line
-  let userAns = answer.textContent; // Get user selected option
-  let correcAns = questions[que_count].answer; // Get correct answer from array
+  let userAns = answer.querySelector("span").innerText; // get text exactly inside <span>
+let correcAns = questions[que_count].answer;
+ // Get correct answer from array
   const allOptions = option_list.children.length; // Get all option items
 
   if (userAns == correcAns) {
