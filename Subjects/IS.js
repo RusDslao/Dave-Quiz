@@ -1,4 +1,3 @@
-// Define Science questions
 const IS = [
   {
     question:
@@ -9,7 +8,8 @@ const IS = [
       "C) if (condition)\n{\n    then-statement;\n}\nelse\n{\n    else-statement;\n}",
       "D) Both A and C are correct.",
     ],
-    answer: "D) Both A and C are correct.",
+    answer:
+      "C) if (condition)\n{\n    then-statement;\n}\nelse\n{\n    else-statement;\n}",
   },
   {
     question: "Which statement best describes a do…while loop?",
@@ -23,4 +23,5 @@ const IS = [
       "B) Executes its body at least once, then repeats while the condition is true.",
   },
 ];
+
 export default IS;
