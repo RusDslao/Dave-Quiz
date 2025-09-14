@@ -163,13 +163,23 @@ function showQuetions(index) {
     return;
   }
 
-  // Replace \n with <br> for proper line breaks
-  let questionHTML = questions[index].question.replace(/\n/g, "<br>");
+  // Escape HTML to render <String> literally
+  function escapeHTML(str) {
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  // Replace \n with <br>
+  let questionHTML = escapeHTML(questions[index].question).replace(/\n/g, "<br>");
   let que_tag = "<span>" + questionHTML + "</span>";
 
   let option_tag = questions[index].options
     .map(option => {
-      return '<div class="option"><span>' + option.replace(/\n/g, "<br>") + "</span></div>";
+      return '<div class="option"><span>' + escapeHTML(option).replace(/\n/g, "<br>") + "</span></div>";
     })
     .join("");
 
@@ -185,6 +195,7 @@ function showQuetions(index) {
     });
   }
 }
+
 
 
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
