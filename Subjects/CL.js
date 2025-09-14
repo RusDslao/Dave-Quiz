@@ -1,5 +1,5 @@
 // Define Science questions
-const Collections = [
+const CL = [
   {
     question: "There are two ways to group objects in programming:",
     options: [
