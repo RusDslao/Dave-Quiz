@@ -1,17 +1,5 @@
 const IS = [
   {
-    question:
-      "Which of the following is the correct syntax for an if…else statement in C#?",
-    options: [
-      "A) if (condition)\n    then-statement;\nelse\n    else-statement;",
-      "B) if condition then\n    statement;\nelse\n    statement;",
-      "C) if (condition)\n{\n    then-statement;\n}\nelse\n{\n    else-statement;\n}",
-      "D) Both A and C are correct.",
-    ],
-    answer:
-      "C) if (condition)\n{\n    then-statement;\n}\nelse\n{\n    else-statement;\n}",
-  },
-  {
     question: "Which statement best describes a do…while loop?",
     options: [
       "A) Executes only if the condition is true initially.",
