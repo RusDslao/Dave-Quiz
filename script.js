@@ -9,8 +9,8 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
 import CL from "./Subjects/CL.js";
-import IS from "./Subjects/IS.js";
 import SS from "./Subjects/SS.js";
+import IS from "./Subjects/IS.js";
 
 let questions = []; // Declare an empty array to hold questions
 
@@ -32,11 +32,11 @@ function handleSubjectChange() {
     case "cl":
       questions = CL.slice(); // Make a copy of the questions array
       break;
-    case "is":
-      questions = IS.slice(); // Make a copy of the questions array
-      break;
     case "ss":
       questions = SS.slice(); // Make a copy of the questions array
+      break;
+    case "is":
+      questions = IS.slice(); // Make a copy of the questions array
       break;
     default:
       console.error("Invalid subject selected");
@@ -55,8 +55,8 @@ radioButtons.forEach((button) => {
     ).value;
     const subjectMap = {
       cl: "Collections",
-      is: "Iteration Statements",
       ss: "Selections Statements",
+      is: "Iteration Statements",
     };
     titleElement.textContent = subjectMap[selectedSubject];
   });
