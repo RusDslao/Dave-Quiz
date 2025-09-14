@@ -5,7 +5,7 @@ const CL = [
     options: [
       "by creating arrays and objects.",
       "by creating collections of objects.",
-      "be done with individual variablesO2",
+      "be done with individual variables",
       "Both A and B",
     ],
     answer: "Both A and B",
