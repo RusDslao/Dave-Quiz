@@ -1,5 +1,5 @@
 // Define Science questions
-const GB = [
+const Collections = [
   {
     question: "There are two ways to group objects in programming:",
     options: [
@@ -34,4 +34,4 @@ const GB = [
   },
 ];
 
-export default GB;
+export default Collections;
