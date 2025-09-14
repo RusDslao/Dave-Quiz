@@ -55,7 +55,7 @@ radioButtons.forEach((button) => {
     ).value;
     const subjectMap = {
       cl: "Collections",
-      ss: "Selections Statements",
+      ss: "Selection Statements",
       is: "Iteration Statements",
     };
     titleElement.textContent = subjectMap[selectedSubject];
