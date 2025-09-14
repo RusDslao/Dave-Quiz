@@ -1,4 +1,3 @@
-// Define Science questions
 const IS = [
   [
     {
