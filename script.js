@@ -163,23 +163,16 @@ function showQuetions(index) {
     return;
   }
 
-  // Escape HTML to render <String> literally
+  // Escape < and > so C# generics show correctly
   function escapeHTML(str) {
-    return str
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
+    return str.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
   }
 
-  // Replace \n with <br>
-  let questionHTML = escapeHTML(questions[index].question).replace(/\n/g, "<br>");
-  let que_tag = "<span>" + questionHTML + "</span>";
+  let que_tag = "<span>" + escapeHTML(questions[index].question) + "</span>";
 
   let option_tag = questions[index].options
     .map(option => {
-      return '<div class="option"><span>' + escapeHTML(option).replace(/\n/g, "<br>") + "</span></div>";
+      return '<div class="option"><span>' + escapeHTML(option) + "</span></div>";
     })
     .join("");
 
@@ -188,13 +181,13 @@ function showQuetions(index) {
 
   const option = option_list.querySelectorAll(".option");
 
-  // Set onclick attribute to all available options
   for (let i = 0; i < option.length; i++) {
     option[i].addEventListener("click", function () {
       optionSelected(this);
     });
   }
 }
+
 
 
 
