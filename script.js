@@ -163,20 +163,16 @@ function showQuetions(index) {
     return;
   }
 
-  let que_tag = "<span>" + questions[index].question + "</span>";
-  let option_tag =
-    '<div class="option"><span>' +
-    questions[index].options[0] +
-    "</span></div>" +
-    '<div class="option"><span>' +
-    questions[index].options[1] +
-    "</span></div>" +
-    '<div class="option"><span>' +
-    questions[index].options[2] +
-    "</span></div>" +
-    '<div class="option"><span>' +
-    questions[index].options[3] +
-    "</span></div>";
+  // Replace \n with <br> for proper line breaks
+  let questionHTML = questions[index].question.replace(/\n/g, "<br>");
+  let que_tag = "<span>" + questionHTML + "</span>";
+
+  let option_tag = questions[index].options
+    .map(option => {
+      return '<div class="option"><span>' + option.replace(/\n/g, "<br>") + "</span></div>";
+    })
+    .join("");
+
   que_text.innerHTML = que_tag; // Add question
   option_list.innerHTML = option_tag; // Add options
 
@@ -189,6 +185,7 @@ function showQuetions(index) {
     });
   }
 }
+
 
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
