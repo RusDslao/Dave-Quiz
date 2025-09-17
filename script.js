@@ -163,32 +163,33 @@ function showQuetions(index) {
     return;
   }
 
-  let que_tag = "<span>" + questions[index].question + "</span>";
-  let option_tag =
-    '<div class="option"><span>' +
-    questions[index].options[0] +
-    "</span></div>" +
-    '<div class="option"><span>' +
-    questions[index].options[1] +
-    "</span></div>" +
-    '<div class="option"><span>' +
-    questions[index].options[2] +
-    "</span></div>" +
-    '<div class="option"><span>' +
-    questions[index].options[3] +
-    "</span></div>";
+  // Escape < and > so C# generics show correctly
+  function escapeHTML(str) {
+    return str.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
+  }
+
+  let que_tag = "<span>" + escapeHTML(questions[index].question) + "</span>";
+
+  let option_tag = questions[index].options
+    .map(option => {
+      return '<div class="option"><span>' + escapeHTML(option) + "</span></div>";
+    })
+    .join("");
+
   que_text.innerHTML = que_tag; // Add question
   option_list.innerHTML = option_tag; // Add options
 
   const option = option_list.querySelectorAll(".option");
 
-  // Set onclick attribute to all available options
   for (let i = 0; i < option.length; i++) {
     option[i].addEventListener("click", function () {
       optionSelected(this);
     });
   }
 }
+
+
+
 
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
@@ -197,8 +198,9 @@ let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 function optionSelected(answer) {
   clearInterval(counter); // Clear timer
   clearInterval(counterLine); // Clear timer line
-  let userAns = answer.textContent; // Get user selected option
-  let correcAns = questions[que_count].answer; // Get correct answer from array
+  let userAns = answer.querySelector("span").innerText; // get text exactly inside <span>
+let correcAns = questions[que_count].answer;
+ // Get correct answer from array
   const allOptions = option_list.children.length; // Get all option items
 
   if (userAns == correcAns) {
