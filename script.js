@@ -8,7 +8,7 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-import CL from "./Subjects/CL.js";
+import CL from "./Subjects/OOP.js";
 import SS from "./Subjects/SS.js";
 import IS from "./Subjects/IS.js";
 
@@ -29,7 +29,7 @@ function handleSubjectChange() {
   console.log("Selected subject:", selectedSubject.value);
 
   switch (selectedSubject.value) {
-    case "cl":
+    case "oop":
       questions = CL.slice(); // Make a copy of the questions array
       break;
     case "ss":
@@ -54,7 +54,7 @@ radioButtons.forEach((button) => {
       'input[name="subject"]:checked'
     ).value;
     const subjectMap = {
-      cl: "Collections",
+      oop: "Object Oriented Programming",
       ss: "Selection Statements",
       is: "Iteration Statements",
     };
