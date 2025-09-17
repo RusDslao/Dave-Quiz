@@ -70,8 +70,8 @@ radioButtons.forEach((button) => {
       cm: "Class Modifier",
       i: "Interface",
       gt: "Generic Type",
-      tc: "Generic Type",
-      nc: "Generic Type",
+      tc: "Type Conversion",
+      nc: "Null Checking",
     };
     titleElement.textContent = subjectMap[selectedSubject];
   });
