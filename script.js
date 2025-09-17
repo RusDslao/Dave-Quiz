@@ -8,9 +8,12 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-import CL from "./Subjects/OOP.js";
-import SS from "./Subjects/SS.js";
-import IS from "./Subjects/IS.js";
+import CM from "./Subjects/CM.js";
+import I from "./Subjects/I.js";
+import OOP from "./Subjects/OOP.js";
+import GT from "./Subjects/GT.js";
+import TC from "./Subjects/TC.js";
+import NC from "./Subjects/NC.js";
 
 let questions = []; // Declare an empty array to hold questions
 
@@ -30,13 +33,22 @@ function handleSubjectChange() {
 
   switch (selectedSubject.value) {
     case "oop":
-      questions = CL.slice(); // Make a copy of the questions array
+      questions = OOP.slice(); // Make a copy of the questions array
       break;
-    case "ss":
-      questions = SS.slice(); // Make a copy of the questions array
+    case "i":
+      questions = I.slice(); // Make a copy of the questions array
       break;
-    case "is":
-      questions = IS.slice(); // Make a copy of the questions array
+    case "cm":
+      questions = CM.slice(); // Make a copy of the questions array
+      break;
+    case "gt":
+      questions = GT.slice(); // Make a copy of the questions array
+      break;
+    case "tc":
+      questions = TC.slice(); // Make a copy of the questions array
+      break;
+    case "nc":
+      questions = NC.slice(); // Make a copy of the questions array
       break;
     default:
       console.error("Invalid subject selected");
@@ -55,8 +67,11 @@ radioButtons.forEach((button) => {
     ).value;
     const subjectMap = {
       oop: "Object Oriented Programming",
-      ss: "Selection Statements",
-      is: "Iteration Statements",
+      cm: "Class Modifier",
+      i: "Interface",
+      gt: "Generic Type",
+      tc: "Generic Type",
+      nc: "Generic Type",
     };
     titleElement.textContent = subjectMap[selectedSubject];
   });
@@ -165,14 +180,19 @@ function showQuetions(index) {
 
   // Escape < and > so C# generics show correctly
   function escapeHTML(str) {
-    return str.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
+    return str
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/\n/g, "<br>");
   }
 
   let que_tag = "<span>" + escapeHTML(questions[index].question) + "</span>";
 
   let option_tag = questions[index].options
-    .map(option => {
-      return '<div class="option"><span>' + escapeHTML(option) + "</span></div>";
+    .map((option) => {
+      return (
+        '<div class="option"><span>' + escapeHTML(option) + "</span></div>"
+      );
     })
     .join("");
 
@@ -188,9 +208,6 @@ function showQuetions(index) {
   }
 }
 
-
-
-
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
@@ -199,8 +216,8 @@ function optionSelected(answer) {
   clearInterval(counter); // Clear timer
   clearInterval(counterLine); // Clear timer line
   let userAns = answer.querySelector("span").innerText; // get text exactly inside <span>
-let correcAns = questions[que_count].answer;
- // Get correct answer from array
+  let correcAns = questions[que_count].answer;
+  // Get correct answer from array
   const allOptions = option_list.children.length; // Get all option items
 
   if (userAns == correcAns) {
