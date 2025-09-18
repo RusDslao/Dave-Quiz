@@ -11,14 +11,15 @@ const D = [
       "A type representing references to methods with a specific signature",
   },
   {
-    question: "Which of the following is valid delegate declaration?",
-    options: [
-      "delegate void MyDelegate(int a, int b);",
-      "delegate MyDelegate(int a, int b);",
-      "delegate void MyDelegate();",
-      "The A and C is Correct",
-    ],
-    answer: "The A and C is Correct",
+    question: "Which of the following is a valid delegate declaration?",
+options: [
+  "delegate void MyDelegate(int a, int b);",
+  "delegate int MyDelegate(int a, int b);",
+  "delegate void MyDelegate();",
+  "All of the above",
+],
+answer: "All of the above",
+
   },
   {
     question: "What is multicast delegate?",
