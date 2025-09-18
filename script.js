@@ -58,10 +58,12 @@ radioButtons.forEach((button) => {
       'input[name="subject"]:checked'
     ).value;
     const subjectMap = {
-      an: "ADO.NET",
-      d: "Delegates",
-      l: "LINQ",
-      ef: "Entity Framewrok",
+      oop: "Object Oriented Programming",
+      cm: "Class Modifier",
+      i: "Interface",
+      gt: "Generic Type",
+      tc: "Generic Type",
+      nc: "Generic Type",
     };
     titleElement.textContent = subjectMap[selectedSubject];
   });
