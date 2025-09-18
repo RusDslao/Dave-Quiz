@@ -58,15 +58,15 @@ answer: "All of the above",
     answer: "MyDelegate d = new MyDelegate(Multiply);",
   },
   {
-    question:
-      "Invoke a delegate:\nMyDelegate d = new MyDelegate(Multiply);\nint result = ???; Which is correct?",
-    options: [
-      "result = d(5, 3);",
-      "result = d.Invoke(5, 3);",
-      "Both A and B",
-      "None",
-    ],
-    answer: "Both A and B",
+    question: "Invoke a delegate:\nMyDelegate d = new MyDelegate(Multiply);\nint result = ???; Which is correct?",
+options: [
+  "result = d(5, 3);",
+  "result = d.Invoke(5, 3);",
+  "Console.WriteLine(d(5, 3));",
+  "All of the above",
+],
+answer: "All of the above",
+
   },
   {
     question:
