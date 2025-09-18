@@ -8,12 +8,10 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-import CM from "./Subjects/CM.js";
-import I from "./Subjects/I.js";
-import OOP from "./Subjects/OOP.js";
-import GT from "./Subjects/GT.js";
-import TC from "./Subjects/TC.js";
-import NC from "./Subjects/NC.js";
+import AN from "./Subjects/AN.js";
+import D from "./Subjects/D.js";
+import L from "./Subjects/L.js";
+import EF from "./Subjects/EF.js";
 
 let questions = []; // Declare an empty array to hold questions
 
@@ -32,23 +30,17 @@ function handleSubjectChange() {
   console.log("Selected subject:", selectedSubject.value);
 
   switch (selectedSubject.value) {
-    case "oop":
-      questions = OOP.slice(); // Make a copy of the questions array
+    case "an":
+      questions = AN.slice(); // Make a copy of the questions array
       break;
-    case "i":
-      questions = I.slice(); // Make a copy of the questions array
+    case "d":
+      questions = D.slice(); // Make a copy of the questions array
       break;
-    case "cm":
-      questions = CM.slice(); // Make a copy of the questions array
+    case "l":
+      questions = L.slice(); // Make a copy of the questions array
       break;
-    case "gt":
-      questions = GT.slice(); // Make a copy of the questions array
-      break;
-    case "tc":
-      questions = TC.slice(); // Make a copy of the questions array
-      break;
-    case "nc":
-      questions = NC.slice(); // Make a copy of the questions array
+    case "ef":
+      questions = EF.slice(); // Make a copy of the questions array
       break;
     default:
       console.error("Invalid subject selected");
@@ -66,12 +58,10 @@ radioButtons.forEach((button) => {
       'input[name="subject"]:checked'
     ).value;
     const subjectMap = {
-      oop: "Object Oriented Programming",
-      cm: "Class Modifier",
-      i: "Interface",
-      gt: "Generic Type",
-      tc: "Generic Type",
-      nc: "Generic Type",
+      an: "ADO.NET",
+      d: "Delegates",
+      l: "LINQ",
+      ef: "Entity Framewrok",
     };
     titleElement.textContent = subjectMap[selectedSubject];
   });
@@ -84,19 +74,19 @@ function shuffleQuestions() {
     [questions[i], questions[j]] = [questions[j], questions[i]]; // Swap questions
 
     // Shuffle options within each question
-    /*questions[i].options = shuffleArray(questions[i].options);
-        questions[j].options = shuffleArray(questions[j].options); */
+    questions[i].options = shuffleArray(questions[i].options);
+    questions[j].options = shuffleArray(questions[j].options);
   }
 }
 
 // Function to shuffle an array
-/*function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
-    }
-    return array;
-}*/
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+  }
+  return array;
+}
 
 // Click event for continue button
 continue_btn.onclick = () => {
