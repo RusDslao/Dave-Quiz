@@ -1,4 +1,4 @@
-const D = [
+const DP = [
   {
     question: "What happens in tight coupling?",
     options: [
@@ -143,4 +143,4 @@ const D = [
   },
 ];
 
-export default D;
+export default DP;
