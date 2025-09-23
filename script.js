@@ -8,10 +8,8 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
-import AN from "./Subjects/AN.js";
-import D from "./Subjects/D.js";
-import L from "./Subjects/L.js";
-import EF from "./Subjects/EF.js";
+import UT from "./Subjects/UT.js";
+import DP from "./Subjects/DP.js";
 
 let questions = []; // Declare an empty array to hold questions
 
@@ -30,17 +28,11 @@ function handleSubjectChange() {
   console.log("Selected subject:", selectedSubject.value);
 
   switch (selectedSubject.value) {
-    case "an":
-      questions = AN.slice(); // Make a copy of the questions array
+    case "ut":
+      questions = UT.slice(); // Make a copy of the questions array
       break;
-    case "d":
-      questions = D.slice(); // Make a copy of the questions array
-      break;
-    case "l":
-      questions = L.slice(); // Make a copy of the questions array
-      break;
-    case "ef":
-      questions = EF.slice(); // Make a copy of the questions array
+    case "dp":
+      questions = DP.slice(); // Make a copy of the questions array
       break;
     default:
       console.error("Invalid subject selected");
@@ -58,10 +50,8 @@ radioButtons.forEach((button) => {
       'input[name="subject"]:checked'
     ).value;
     const subjectMap = {
-      an: "ADO.NET",
-      d: "Delegates",
-      l: "LINQ",
-      ef: "Entity Framewrok",
+      ut: "Unit Testing",
+      dp: "Design Principle",
     };
     titleElement.textContent = subjectMap[selectedSubject];
   });
