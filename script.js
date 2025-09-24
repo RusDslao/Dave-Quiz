@@ -10,6 +10,7 @@ const timeCount = document.querySelector(".timer .timer_sec");
 
 import UT from "./Subjects/UT.js";
 import DP from "./Subjects/DP.js";
+import HTML from "./Subjects/HTML.js";
 
 let questions = []; // Declare an empty array to hold questions
 
@@ -34,6 +35,9 @@ function handleSubjectChange() {
     case "dp":
       questions = DP.slice(); // Make a copy of the questions array
       break;
+    case "html":
+      questions = HTML.slice(); // Make a copy of the questions array
+      break;
     default:
       console.error("Invalid subject selected");
       break;
@@ -52,6 +56,7 @@ radioButtons.forEach((button) => {
     const subjectMap = {
       ut: "Unit Testing",
       dp: "Design Principle",
+      html: "HTML",
     };
     titleElement.textContent = subjectMap[selectedSubject];
   });
